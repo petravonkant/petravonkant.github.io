@@ -41,7 +41,6 @@ html, body {
 }
 
 body {
-  background-color: white;
   font: 20px "MinionPro-Regular", helvetica, arial, clean, sans-serif;
 }
 
@@ -58,15 +57,11 @@ p {
 }
 
 a {
-  color: #00a;
+  color: #0f4c81;
 }
 
-a:hover {
-  color: black;
-}
-
-a:visited {
-  color: #a0a;
+a:hover, .title:hover {
+	text-decoration: underline;
 }
 
 table {
@@ -105,7 +100,7 @@ ul.posts {
 }
 
 .title {
-  color: #a00;
+  color: #D94F70;
   font-size: 110%;
   font-weight: bold;
   font-family: "DIN-Regular";
@@ -115,13 +110,10 @@ ul.posts {
 }
 
   .site .title a {
-    color: #a00;
+    color: #BF1932;
     text-decoration: none;
   }
 
-  .site .title a:hover {
-    color: black;
-  }
 
   .site .title a.extra {
     color: #aaa;
