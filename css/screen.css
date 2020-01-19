@@ -84,7 +84,7 @@ ul.posts {
   }
 
   ul.posts span {
-    color: #aaa;
+    color: #666;
     font-family: "DIN-Light", Monaco, "Courier New", monospace;
     font-size: 85%;
     letter-spacing: .25px;
@@ -134,7 +134,7 @@ ul.posts {
     font-family: "DIN-Light";
     line-height: 1.425em;
     color: #666;
-    border-top: 4px solid #eee;
+    border-top: 4px solid #BF1932CC;
     overflow: hidden;
   }
   
