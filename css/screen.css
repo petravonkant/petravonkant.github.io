@@ -1,11 +1,36 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+/* Embedded Fonts */
 
-/* Global Reset */
+@font-face {
+	font-family: "DIN-Regular";
+	src: url("DIN-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "DIN-Light";
+	src: url("DIN-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: "MinionPro-Regular";
+	src: url("MinionPro-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "MinionPro-Regular";
+	src: url("MinionPro-Bold.otf") format("opentype");
+	font-weight: bold
+}
+@font-face {
+	font-family: "MinionPro-Regular";
+	src: url("MinionPro-It.otf") format("opentype");
+	font-style: italic;
+}
+@font-face {
+	font-family: "MinionPro-Regular";
+	src: url("MinionPro-BoldIt.otf") format("opentype");
+	font-weight: bold;
+	font-style: italic;
+}
 
+a { text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +42,7 @@ html, body {
 
 body {
   background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
-  *font-size: small;
-  text-align: center;
+  font: 20px "MinionPro-Regular", helvetica, arial, clean, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,17 +82,17 @@ table {
 
 ul.posts {
   list-style-type: none;
-  margin-bottom: 2em;
 }
 
   ul.posts li {
-    line-height: 1.75em;
+    line-height: 1.325em;
   }
 
   ul.posts span {
     color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
+    font-family: "DIN-Light", Monaco, "Courier New", monospace;
+    font-size: 85%;
+    letter-spacing: .25px;
   }
 
 /*****************************************************************************/
@@ -78,18 +101,17 @@ ul.posts {
 /*
 /*****************************************************************************/
 
-.site {
-  font-size: 125%;
-  text-align: justify;
-  width: 30em;
-  margin: 3em auto 2em auto;
-  line-height: 1.45em;
+.site .footer {
 }
 
 .title {
   color: #a00;
+  font-size: 110%;
   font-weight: bold;
-  margin-bottom: 2em;
+  font-family: "DIN-Regular";
+  letter-spacing: .5px;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
 }
 
   .site .title a {
@@ -115,14 +137,15 @@ ul.posts {
     color: #aaa;
   }
 
-  .site .footer {
+  .footer {
     font-size: 80%;
+    font-family: "DIN-Light";
+    line-height: 1.425em;
     color: #666;
     border-top: 4px solid #eee;
-    margin-top: 2em;
     overflow: hidden;
   }
-
+  
     .site .footer .contact {
       float: left;
       margin-right: 3em;
@@ -131,9 +154,7 @@ ul.posts {
       .site .footer .contact a {
         color: #8085C1;
       }
-
     .site .footer .rss {
-      margin-top: 1.1em;
       margin-right: -.2em;
       float: right;
     }
@@ -141,6 +162,16 @@ ul.posts {
       .site .footer .rss img {
         border: 0;
       }
+.flex-wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+  font-size: 100%;
+  width: 30em;
+  line-height: 1.325em;
+  margin: 0 auto 0 auto;
+}
 
 /*****************************************************************************/
 /*
