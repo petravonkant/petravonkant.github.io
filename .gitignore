@@ -2,4 +2,6 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
 vendor
