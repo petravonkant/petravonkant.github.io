@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "kite, part one"
+title: "Kite, Part One"
 ---
 Things never turn out the way you expect. This is especially the case when a kite is involved.
 

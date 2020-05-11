@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "the democratic debate"
+title: "The Democratic Debate"
 ---
 Tonight's Democratic debate was, if anything at all, incredibly difficult to watch.
 

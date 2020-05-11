@@ -1,27 +1,27 @@
 @font-face {
-	font-family: "DIN-Regular";
-	src: url("DIN-Regular.otf") format("opentype");
+    font-family: "NationalBold";
+    src: url("National-Bold.otf") format("opentype");
 }
 @font-face {
-	font-family: "DIN-Light";
-	src: url("DIN-Light.otf") format("opentype");
+    font-family: "NationalBlack";
+    src: url("National-Black.otf") format("opentype");
 }
 @font-face {
-	font-family: "MinionPro-Regular";
+	font-family: "MinionPro";
 	src: url("MinionPro-Regular.otf") format("opentype");
 }
 @font-face {
-	font-family: "MinionPro-Regular";
+	font-family: "MinionPro";
 	src: url("MinionPro-Bold.otf") format("opentype");
 	font-weight: bold
 }
 @font-face {
-	font-family: "MinionPro-Regular";
+	font-family: "MinionPro";
 	src: url("MinionPro-It.otf") format("opentype");
 	font-style: italic;
 }
 @font-face {
-	font-family: "MinionPro-Regular";
+	font-family: "MinionPro";
 	src: url("MinionPro-BoldIt.otf") format("opentype");
 	font-weight: bold;
 	font-style: italic;
@@ -33,121 +33,77 @@
     margin: 0;
     padding: 0;
 }
-a { 
+a {
     text-decoration: none;
     color: #0f4c81;
 }
-a:hover, header:hover {
+a:hover{
 	text-decoration: underline;
 }
 p {
     padding: 0 0 1em 0;
 }
 body {
-  font: 20px "MinionPro-Regular";
+    font: 20px "MinionPro";
 }
 .flex-wrapper {
-    display: flex;
+    line-height: 1.3em;
+    width: 30em;
     min-height: 100vh;
+    margin: 0 calc(50vw - 15em) 0 calc(50vw - 15em);
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30em;
-    line-height: 1.325em;
-    margin: 0 calc(50vw - 15em) 0 calc(50vw - 15em);
 }
 header {
-    font-size: 110%;
-    font-weight: bold;
-    font-family: "DIN-Regular";
-    letter-spacing: .5px;
-    margin-top: 2em;
-    margin-bottom: 1.33em;
-    text-decoration: none;
-    color: #BF1932;
+    margin-top: 2.5em;
+    padding-bottom: 0.25em;
+    border-bottom: 4px solid #BF1932CC;
+    margin-bottom: 1.38em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
-.site {
-    flex-grow: 1;
+.banner {
+    display: inline-block;
 }
-ul.posts {
-    list-style-type: none; /* no bullet points */
-}
-ul.posts li {
-    line-height: 1.325em;
-}
-ul.posts span {
-    color: #666;
-    font-family: "DIN-Light";
-    font-size: 85%;
-    letter-spacing: .25px;
-}
-footer {
-    font-size: 80%;
-    font-family: "DIN-Light";
-    line-height: 1.425em;
-    color: #666;
-    border-top: 4px solid #BF1932CC;
-    overflow: hidden;
-    padding: 1em 0 1em;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    a { 
-        text-decoration: none;
-        color: #0f4c81;
-    }
-    a:hover, header:hover {
-        text-decoration: underline;
-    }
-    p {
-        padding: 0 0 1em 0;
-    }
-    body {
-      font: 20px "MinionPro-Regular";
-    }
-    .flex-wrapper {
-        display: flex;
-        min-height: calc(var(--mobile-vh));
-        flex-direction: column;
-        justify-content: space-between;
-        width: 90vw;
-        line-height: 1.325em;
-        margin: 0 auto 0 auto;
-    }
-    header {
-        font-size: 110%;
-        font-weight: bold;
-        font-family: "DIN-Regular";
-        letter-spacing: .5px;
-        margin-bottom: 1em;
-        margin-top: 1.5em;
-        text-decoration: none;
+    a.banner {
+        font-family: "NationalBlack";
+        font-size: 2em;
         color: #BF1932;
     }
-    .site {
+.nav {
+    display: inline-block;
+}
+    a.nav {
+        font-family: "NationalBold";
+        font-size: 1.25em;
+        color: #0f4c81;
+    }
+.site {
+        margin: 0 0 1em 0;
         flex-grow: 1;
-    }
-    ul.posts {
-        list-style-type: none; /* no bullet points */
-    }
-    ul.posts li {
-        line-height: 1.325em;
-    }
-    ul.posts span {
-        color: #666;
-        font-family: "DIN-Light";
-        font-size: 85%;
-        letter-spacing: .25px;
-    }
-    footer {
-        font-size: 80%;
-        font-family: "DIN-Light";
-        line-height: 1.425em;
-        color: #666;
-        border-top: 4px solid #BF1932CC;
-        overflow: hidden;
-        padding: 1em 0 1em;
+}
+.entry {
+    margin-bottom: 1em;
+}
+.title {
+    font-family: "NationalBold";
+    font-size: 1.25em;
+    color: #0f4c81;
+}
+.date {
+    font-family: "NationalBold";
+    color: #aaa;
+    padding-bottom: 0.15em;
+}
+a.pagination {
+    font-family: "NationalBold";
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .flex-wrapper {
+        width: 90vw;
+        min-height: calc(var(--mobile-vh));
+        margin: 0 auto 0 auto;
     }
 }
