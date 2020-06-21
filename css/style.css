@@ -81,8 +81,7 @@ header {
         color: #0f4c81;
     }
 .site {
-        margin: 0 0 1em 0;
-        flex-grow: 1;
+    flex-grow: 1;
 }
 .entry {
     margin-bottom: 1em;
@@ -97,9 +96,12 @@ header {
     color: #aaa;
     padding-bottom: 0.15em;
 }
-a.pagination {
-    font-family: "NationalBold";
+.pagination {
+    margin-bottom: 1em;
 }
+    a.pagination {
+        font-family: "NationalBold";
+    }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .flex-wrapper {
         width: 90vw;
